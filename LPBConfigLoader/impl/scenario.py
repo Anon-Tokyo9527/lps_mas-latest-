@@ -167,6 +167,7 @@ class TestEnv:
         self._shuttle_pick_queues = {}
         self._conveyor_flows = {}
         self._package_scales = {}
+        self._shuttle_roof_positions = {}
         self._runtime_last_update = None
 
     def start_api_server(self, host="0.0.0.0", port=60124):
@@ -1940,7 +1941,7 @@ class TestEnv:
             },
         )
         try:
-            agent.reset()
+            agent.set_arm_display_pose(mode="neutral")
         except Exception:
             pass
         return True
@@ -1974,7 +1975,19 @@ class TestEnv:
                 col = idx % 3
                 offset_x = (col - 1) * 0.22
                 offset_y = 0.18 + row * 0.22
-                roof_pos = [base[0] + offset_x, base[1] + offset_y, max(base[2] + 1.15, 1.15)]
+                raw_z = max(base[2] + 0.55, 0.55)
+                target = [base[0] + offset_x, base[1] + offset_y, raw_z]
+                prev = self._shuttle_roof_positions.get(package_name)
+                if prev is not None:
+                    alpha = 0.3
+                    roof_pos = [
+                        prev[0] + (target[0] - prev[0]) * alpha,
+                        prev[1] + (target[1] - prev[1]) * alpha,
+                        prev[2] + (target[2] - prev[2]) * alpha,
+                    ]
+                else:
+                    roof_pos = target
+                self._shuttle_roof_positions[package_name] = list(roof_pos)
                 self._set_package_world_position(package_name, roof_pos)
 
     def _conveyor_package_end_position(self, conveyor_name, start_pos, package_name=None, dimensions=None):
@@ -2546,6 +2559,21 @@ class TestEnv:
             return False
 
         if phase == "lower_pick":
+            t = self._phase_ratio(phase_elapsed, durations.get("lower_pick", 0.8))
+            ee_pos = self._manipulator_end_effector_position(agent)
+            if ee_pos is not None:
+                package_half = self._package_world_half_height(
+                    package_name=package_name, clearance=0.04
+                )
+                gripper_target = [
+                    ee_pos[0],
+                    ee_pos[1],
+                    ee_pos[2] - package_half - 0.04,
+                ]
+                smooth_pos = self._lerp_vec3(
+                    package_start, gripper_target, self._smoothstep(t)
+                )
+                self._set_package_world_position(package_name, smooth_pos)
             if phase_elapsed >= float(durations.get("lower_pick", 0.8)) or self._manipulator_end_effector_near(
                 agent,
                 package_start,
@@ -3016,7 +3044,7 @@ class TestEnv:
         if not record:
             return
         base = self._agent_position(agent)
-        carrier_pos = [base[0], base[1], max(base[2] + 0.55, 0.55)]
+        carrier_pos = [base[0], base[1], max(base[2] + 0.18, 0.18)]
         self._move_pallet_stack(
             record["pallet_name"],
             carrier_pos,

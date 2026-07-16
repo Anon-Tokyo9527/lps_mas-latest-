@@ -46,7 +46,7 @@ class Transporter:
             name=name,
             position=self.position.tolist(),
             orientation=quat,
-            scale=[1.15, 1.15, 1.15],
+            scale=[1.0, 1.0, 1.0],
         )
 
         world = World.instance()

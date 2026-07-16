@@ -197,7 +197,13 @@ Return a A2A message. The `body` must contain:
         self.controller.reset()
         self._step = 0
         self.sync_pos()
-        self.set_arm_display_pose()
+        try:
+            self.ur10.set_joint_positions(
+                positions=self.default_arm_positions.copy(),
+                joint_indices=list(range(6)),
+            )
+        except Exception:
+            self.set_arm_display_pose()
 
 
     def move_to(self, pos):
@@ -424,6 +430,13 @@ Return a A2A message. The `body` must contain:
         try:
             current = self._safe_get_joint_positions(self.ur10, "ur10")
             if current is None:
+                try:
+                    self.ur10.set_joint_positions(
+                        positions=desired[:joint_count],
+                        joint_indices=joint_indices,
+                    )
+                except Exception:
+                    pass
                 return
             if current is not None and len(current) >= joint_count:
                 current = np.asarray(current[:joint_count], dtype=float)
