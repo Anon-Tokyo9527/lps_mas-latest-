@@ -1,0 +1,124 @@
+{
+  "scene_name": "lpb_large_chain_demo",
+  "seed": 22,
+  "warehouse": {
+    "name": "DemoWarehouse",
+    "dimensions": [28, 16, 6],
+    "position": [0, 0, 0],
+    "grid_size": 28
+  },
+  "shelves": [
+    {
+      "name_prefix": "Shelf",
+      "area": {
+        "center": [4.0, 8.0, 0.0],
+        "size": [5.0, 1.0, 0.0]
+      },
+      "arrangement": "rows",
+      "rows": 1,
+      "columns": 2,
+      "spacing": [1.6, 1.0],
+      "shelf": {
+        "dimensions": [2.8, 0.9, 3.0],
+        "segments": 1,
+        "rotation": 0
+      },
+      "packages": {
+        "mode": "enumerated",
+        "items": [
+          {
+            "name": "ShelfPkg_1",
+            "shelf_index": 0,
+            "relative_position": [-0.55, -0.12, 1.2],
+            "dimensions": [0.3, 0.3, 0.5],
+            "size": "medium"
+          },
+          {
+            "name": "ShelfPkg_2",
+            "shelf_index": 0,
+            "relative_position": [0.35, -0.12, 1.2],
+            "dimensions": [0.3, 0.3, 0.5],
+            "size": "medium"
+          },
+          {
+            "name": "ShelfPkg_3",
+            "shelf_index": 1,
+            "relative_position": [-0.4, -0.12, 1.2],
+            "dimensions": [0.35, 0.3, 0.5],
+            "size": "medium"
+          }
+        ]
+      }
+    }
+  ],
+  "conveyors": [
+    {
+      "name": "DemoConveyor",
+      "start": [9.0, 8.0, 0.0],
+      "end": [18.0, 8.0, 0.0],
+      "segment_length": 1.5,
+      "width": 0.8,
+      "height": 0.35,
+      "surface_offset_z": -0.14,
+      "package_clearance_z": 0.005,
+      "end_slot": {
+        "name": "DemoConveyor_EndSlot",
+        "dimensions": [1.8, 1.1, 0.18],
+        "offset": [0.0, -1.1, 0.16],
+        "surface_offset_z": -0.005,
+        "package_clearance_z": 0.0
+      }
+    }
+  ],
+  "vehicles": {
+    "shuttles": [
+      {
+        "name": "shuttle1",
+        "position": [3.6, 5.8, 0.0],
+        "rotation": 0
+      }
+    ],
+    "transporters": [
+      {
+        "name": "transporter1",
+        "position": [20.0, 4.0, 0.0],
+        "rotation": 0
+      }
+    ]
+  },
+  "palletizing_areas": [
+    {
+      "name": "PalletizingArea_1",
+      "area": {
+        "center": [20.0, 8.0, 0.0],
+        "size": [4.2, 2.6, 0.0]
+      },
+      "robot_arm": {
+        "name": "pallet_arm1",
+        "relative_position": [-0.9, 0.0, 0.0],
+        "rotation": 90
+      },
+      "pallets": [
+        {
+          "name": "Pallet_1",
+          "relative_position": [1.35, 0.0, 0.0],
+          "dimensions": [1.8, 1.3, 0.28],
+          "surface_offset_z": -0.045,
+          "package_clearance_z": 0.003
+        }
+      ]
+    }
+  ],
+  "pallet_transport_targets": [
+    {
+      "name": "PalletDropZone_1",
+      "position": [24.0, 12.0, 0.0],
+      "size": [2.6, 1.9, 0.08],
+      "rotation": 0,
+      "color": [1.0, 0.05, 0.02],
+      "dash_length": 0.35,
+      "gap_length": 0.18,
+      "line_width": 0.04
+    }
+  ]
+}

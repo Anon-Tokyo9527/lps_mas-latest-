@@ -1,0 +1,3125 @@
+{
+  "scene_name": "grid_layout",
+  "warehouse": {
+    "name": "Warehouse",
+    "dimensions": {
+      "length": 40,
+      "width": 40,
+      "height": 10
+    },
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "grid_size": 40
+  },
+  "objects": [
+    {
+      "type": "shelf",
+      "name": "Shelf_1",
+      "dimensions": {
+        "length": 8,
+        "width": 1.0,
+        "height": 6.0
+      },
+      "position": {
+        "x": 4.541216809283184,
+        "y": 13.048728124626436,
+        "z": 0
+      },
+      "color": "red",
+      "rotation": 90,
+      "children": []
+    },
+    {
+      "type": "shelf",
+      "name": "Shelf_2",
+      "dimensions": {
+        "length": 8,
+        "width": 1.0,
+        "height": 6.0
+      },
+      "position": {
+        "x": 7.144574331894602,
+        "y": 13.073394450081688,
+        "z": 0
+      },
+      "color": "red",
+      "rotation": 90,
+      "children": []
+    },
+    {
+      "type": "shelf",
+      "name": "Shelf_3",
+      "dimensions": {
+        "length": 8,
+        "width": 1.0,
+        "height": 6.0
+      },
+      "position": {
+        "x": 9.925104448896251,
+        "y": 13.040693832208223,
+        "z": 0
+      },
+      "color": "red",
+      "rotation": 90,
+      "children": [
+        {
+          "type": "box",
+          "name": "Box_Shelf_3_L2_M_1",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 9.925104448896251,
+            "y": 10.940693832208224,
+            "z": 2.8
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_3",
+          "level": 2,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_3_L2_M_2",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 9.925104448896251,
+            "y": 11.290693832208223,
+            "z": 2.8
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_3",
+          "level": 2,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_3_L2_M_3",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 9.925104448896251,
+            "y": 11.640693832208223,
+            "z": 2.8
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_3",
+          "level": 2,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_3_L2_S_4",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 9.950104448896251,
+            "y": 11.965693832208224,
+            "z": 2.8
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_3",
+          "level": 2,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        }
+      ]
+    },
+    {
+      "type": "shelf",
+      "name": "Shelf_4",
+      "dimensions": {
+        "length": 8,
+        "width": 1.0,
+        "height": 6.0
+      },
+      "position": {
+        "x": 12.622830515400977,
+        "y": 13.0,
+        "z": 0
+      },
+      "color": "red",
+      "rotation": 90,
+      "children": []
+    },
+    {
+      "type": "shelf",
+      "name": "Shelf_5",
+      "dimensions": {
+        "length": 8,
+        "width": 1.0,
+        "height": 6.0
+      },
+      "position": {
+        "x": 15.388697303471897,
+        "y": 13.000243189170412,
+        "z": 0
+      },
+      "color": "red",
+      "rotation": 90,
+      "children": [
+        {
+          "type": "box",
+          "name": "Box_Shelf_5_L3_M_1",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 15.388697303471897,
+            "y": 10.900243189170412,
+            "z": 4.1
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_5",
+          "level": 3,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_5_L3_M_2",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 15.388697303471897,
+            "y": 11.250243189170412,
+            "z": 4.1
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_5",
+          "level": 3,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_5_L3_M_3",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 15.388697303471897,
+            "y": 11.600243189170412,
+            "z": 4.1
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_5",
+          "level": 3,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_5_L3_S_4",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 15.413697303471897,
+            "y": 11.925243189170413,
+            "z": 4.1
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_5",
+          "level": 3,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        }
+      ]
+    },
+    {
+      "type": "shelf",
+      "name": "Shelf_6",
+      "dimensions": {
+        "length": 8,
+        "width": 1.0,
+        "height": 6.0
+      },
+      "position": {
+        "x": 18.11380178282987,
+        "y": 13.0,
+        "z": 0
+      },
+      "color": "red",
+      "rotation": 90,
+      "children": []
+    },
+    {
+      "type": "shelf",
+      "name": "Shelf_7",
+      "dimensions": {
+        "length": 8,
+        "width": 1.0,
+        "height": 6.0
+      },
+      "position": {
+        "x": 20.888012899525783,
+        "y": 13.07169431446412,
+        "z": 0
+      },
+      "color": "red",
+      "rotation": 90,
+      "children": [
+        {
+          "type": "box",
+          "name": "Box_Shelf_7_L4_M_1",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 20.888012899525783,
+            "y": 13.47169431446412,
+            "z": 5.962
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_7",
+          "level": 4,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_7_L4_M_2",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 20.888012899525783,
+            "y": 13.82169431446412,
+            "z": 5.962
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_7",
+          "level": 4,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_7_L4_M_3",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 20.888012899525783,
+            "y": 14.17169431446412,
+            "z": 5.962
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_7",
+          "level": 4,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_7_L4_S_4",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 20.913012899525782,
+            "y": 14.49669431446412,
+            "z": 5.962
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_7",
+          "level": 4,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_7_L1_M_1",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 20.888012899525783,
+            "y": 10.97169431446412,
+            "z": 1.3
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_7",
+          "level": 1,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_7_L1_S_2",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 20.913012899525782,
+            "y": 11.29669431446412,
+            "z": 1.3
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_7",
+          "level": 1,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_7_L1_S_3",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 20.913012899525782,
+            "y": 11.59669431446412,
+            "z": 1.3
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_7",
+          "level": 1,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_7_L1_M_4",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 20.888012899525783,
+            "y": 11.92169431446412,
+            "z": 1.3
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_7",
+          "level": 1,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        }
+      ]
+    },
+    {
+      "type": "shelf",
+      "name": "Shelf_8",
+      "dimensions": {
+        "length": 8,
+        "width": 1.0,
+        "height": 6.0
+      },
+      "position": {
+        "x": 23.496157034551434,
+        "y": 13.0,
+        "z": 0
+      },
+      "color": "red",
+      "rotation": 90,
+      "children": []
+    },
+    {
+      "type": "shelf",
+      "name": "Shelf_9",
+      "dimensions": {
+        "length": 8,
+        "width": 1.0,
+        "height": 6.0
+      },
+      "position": {
+        "x": 26.18406699650714,
+        "y": 13.0,
+        "z": 0
+      },
+      "color": "red",
+      "rotation": 90,
+      "children": []
+    },
+    {
+      "type": "shelf",
+      "name": "Shelf_10",
+      "dimensions": {
+        "length": 8,
+        "width": 1.0,
+        "height": 6.0
+      },
+      "position": {
+        "x": 28.96736091290855,
+        "y": 13.027329091785678,
+        "z": 0
+      },
+      "color": "red",
+      "rotation": 90,
+      "children": []
+    },
+    {
+      "type": "shelf",
+      "name": "Shelf_11",
+      "dimensions": {
+        "length": 8,
+        "width": 1.0,
+        "height": 6.0
+      },
+      "position": {
+        "x": 31.72078629308788,
+        "y": 13.058906541252764,
+        "z": 0
+      },
+      "color": "red",
+      "rotation": 90,
+      "children": []
+    },
+    {
+      "type": "shelf",
+      "name": "Shelf_12",
+      "dimensions": {
+        "length": 8,
+        "width": 1.0,
+        "height": 6.0
+      },
+      "position": {
+        "x": 34.35777461543732,
+        "y": 13.0,
+        "z": 0
+      },
+      "color": "red",
+      "rotation": 90,
+      "children": [
+        {
+          "type": "box",
+          "name": "Box_Shelf_12_L4_M_1",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 34.35777461543732,
+            "y": 13.4,
+            "z": 5.962
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_12",
+          "level": 4,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_12_L4_S_2",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 34.38277461543732,
+            "y": 13.725,
+            "z": 5.962
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_12",
+          "level": 4,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_12_L4_S_3",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 34.38277461543732,
+            "y": 14.025,
+            "z": 5.962
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_12",
+          "level": 4,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_12_L4_M_4",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 34.35777461543732,
+            "y": 14.350000000000001,
+            "z": 5.962
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_12",
+          "level": 4,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_12_L3_M_1",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 34.35777461543732,
+            "y": 10.9,
+            "z": 4.1
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_12",
+          "level": 3,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_12_L3_M_2",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 34.35777461543732,
+            "y": 11.25,
+            "z": 4.1
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_12",
+          "level": 3,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_12_L3_M_3",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 34.35777461543732,
+            "y": 11.6,
+            "z": 4.1
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_12",
+          "level": 3,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_12_L3_S_4",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 34.38277461543732,
+            "y": 11.925,
+            "z": 4.1
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_12",
+          "level": 3,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_12_L2_S_1",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 34.38277461543732,
+            "y": 10.875,
+            "z": 2.8
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_12",
+          "level": 2,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_12_L2_S_2",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 34.38277461543732,
+            "y": 11.175,
+            "z": 2.8
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_12",
+          "level": 2,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_12_L2_S_3",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 34.38277461543732,
+            "y": 11.475,
+            "z": 2.8
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_12",
+          "level": 2,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_12_L2_S_4",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 34.38277461543732,
+            "y": 11.775,
+            "z": 2.8
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_12",
+          "level": 2,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_12_L2_S_5",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 34.38277461543732,
+            "y": 12.075000000000001,
+            "z": 2.8
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_12",
+          "level": 2,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        }
+      ]
+    },
+    {
+      "type": "shelf",
+      "name": "Shelf_13",
+      "dimensions": {
+        "length": 8,
+        "width": 1.0,
+        "height": 6.0
+      },
+      "position": {
+        "x": 4.57424286812852,
+        "y": 23.66275669150943,
+        "z": 0
+      },
+      "color": "red",
+      "rotation": 90,
+      "children": [
+        {
+          "type": "box",
+          "name": "Box_Shelf_13_L4_S_1",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 4.5992428681285205,
+            "y": 24.03775669150943,
+            "z": 5.962
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_13",
+          "level": 4,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_13_L4_S_2",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 4.5992428681285205,
+            "y": 24.33775669150943,
+            "z": 5.962
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_13",
+          "level": 4,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_13_L4_S_3",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 4.5992428681285205,
+            "y": 24.63775669150943,
+            "z": 5.962
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_13",
+          "level": 4,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_13_L4_S_4",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 4.5992428681285205,
+            "y": 24.93775669150943,
+            "z": 5.962
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_13",
+          "level": 4,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_13_L4_S_5",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 4.5992428681285205,
+            "y": 25.23775669150943,
+            "z": 5.962
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_13",
+          "level": 4,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_13_L3_M_1",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 4.57424286812852,
+            "y": 21.562756691509428,
+            "z": 4.1
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_13",
+          "level": 3,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_13_L3_M_2",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 4.57424286812852,
+            "y": 21.91275669150943,
+            "z": 4.1
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_13",
+          "level": 3,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_13_L3_M_3",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 4.57424286812852,
+            "y": 22.26275669150943,
+            "z": 4.1
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_13",
+          "level": 3,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_13_L3_S_4",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 4.5992428681285205,
+            "y": 22.58775669150943,
+            "z": 4.1
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_13",
+          "level": 3,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_13_L2_M_1",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 4.57424286812852,
+            "y": 21.562756691509428,
+            "z": 2.8
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_13",
+          "level": 2,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_13_L2_S_2",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 4.5992428681285205,
+            "y": 21.88775669150943,
+            "z": 2.8
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_13",
+          "level": 2,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_13_L2_S_3",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 4.5992428681285205,
+            "y": 22.187756691509428,
+            "z": 2.8
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_13",
+          "level": 2,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_13_L2_M_4",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 4.57424286812852,
+            "y": 22.51275669150943,
+            "z": 2.8
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_13",
+          "level": 2,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        }
+      ]
+    },
+    {
+      "type": "shelf",
+      "name": "Shelf_14",
+      "dimensions": {
+        "length": 8,
+        "width": 1.0,
+        "height": 6.0
+      },
+      "position": {
+        "x": 7.268258283790683,
+        "y": 23.625573839642172,
+        "z": 0
+      },
+      "color": "red",
+      "rotation": 90,
+      "children": [
+        {
+          "type": "box",
+          "name": "Box_Shelf_14_L3_M_1",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 7.268258283790683,
+            "y": 21.52557383964217,
+            "z": 4.1
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_14",
+          "level": 3,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_14_L3_M_2",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 7.268258283790683,
+            "y": 21.875573839642172,
+            "z": 4.1
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_14",
+          "level": 3,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_14_L3_M_3",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 7.268258283790683,
+            "y": 22.225573839642173,
+            "z": 4.1
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_14",
+          "level": 3,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_14_L3_S_4",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 7.293258283790683,
+            "y": 22.550573839642173,
+            "z": 4.1
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_14",
+          "level": 3,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        }
+      ]
+    },
+    {
+      "type": "shelf",
+      "name": "Shelf_15",
+      "dimensions": {
+        "length": 8,
+        "width": 1.0,
+        "height": 6.0
+      },
+      "position": {
+        "x": 9.932835936143405,
+        "y": 23.658089503635814,
+        "z": 0
+      },
+      "color": "red",
+      "rotation": 90,
+      "children": []
+    },
+    {
+      "type": "shelf",
+      "name": "Shelf_16",
+      "dimensions": {
+        "length": 8,
+        "width": 1.0,
+        "height": 6.0
+      },
+      "position": {
+        "x": 12.618941484916457,
+        "y": 23.634758872651922,
+        "z": 0
+      },
+      "color": "red",
+      "rotation": 90,
+      "children": []
+    },
+    {
+      "type": "shelf",
+      "name": "Shelf_17",
+      "dimensions": {
+        "length": 8,
+        "width": 1.0,
+        "height": 6.0
+      },
+      "position": {
+        "x": 15.39700464603649,
+        "y": 23.68015850808427,
+        "z": 0
+      },
+      "color": "red",
+      "rotation": 90,
+      "children": [
+        {
+          "type": "box",
+          "name": "Box_Shelf_17_L4_S_1",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 15.422004646036491,
+            "y": 24.05515850808427,
+            "z": 5.962
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_17",
+          "level": 4,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_17_L4_S_2",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 15.422004646036491,
+            "y": 24.35515850808427,
+            "z": 5.962
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_17",
+          "level": 4,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_17_L4_S_3",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 15.422004646036491,
+            "y": 24.65515850808427,
+            "z": 5.962
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_17",
+          "level": 4,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_17_L4_S_4",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 15.422004646036491,
+            "y": 24.95515850808427,
+            "z": 5.962
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_17",
+          "level": 4,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_17_L4_S_5",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 15.422004646036491,
+            "y": 25.255158508084268,
+            "z": 5.962
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_17",
+          "level": 4,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_17_L3_M_1",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 15.39700464603649,
+            "y": 21.580158508084267,
+            "z": 4.1
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_17",
+          "level": 3,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_17_L3_S_2",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 15.422004646036491,
+            "y": 21.90515850808427,
+            "z": 4.1
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_17",
+          "level": 3,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_17_L3_S_3",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 15.422004646036491,
+            "y": 22.205158508084267,
+            "z": 4.1
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_17",
+          "level": 3,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_17_L3_M_4",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 15.39700464603649,
+            "y": 22.53015850808427,
+            "z": 4.1
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_17",
+          "level": 3,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_17_L1_S_1",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 15.422004646036491,
+            "y": 21.55515850808427,
+            "z": 1.3
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_17",
+          "level": 1,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_17_L1_S_2",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 15.422004646036491,
+            "y": 21.85515850808427,
+            "z": 1.3
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_17",
+          "level": 1,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_17_L1_S_3",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 15.422004646036491,
+            "y": 22.15515850808427,
+            "z": 1.3
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_17",
+          "level": 1,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_17_L1_S_4",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 15.422004646036491,
+            "y": 22.455158508084267,
+            "z": 1.3
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_17",
+          "level": 1,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_17_L1_S_5",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 15.422004646036491,
+            "y": 22.755158508084268,
+            "z": 1.3
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_17",
+          "level": 1,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        }
+      ]
+    },
+    {
+      "type": "shelf",
+      "name": "Shelf_18",
+      "dimensions": {
+        "length": 8,
+        "width": 1.0,
+        "height": 6.0
+      },
+      "position": {
+        "x": 18.158513701489394,
+        "y": 23.67203626217492,
+        "z": 0
+      },
+      "color": "red",
+      "rotation": 90,
+      "children": []
+    },
+    {
+      "type": "shelf",
+      "name": "Shelf_19",
+      "dimensions": {
+        "length": 8,
+        "width": 1.0,
+        "height": 6.0
+      },
+      "position": {
+        "x": 20.820107769035488,
+        "y": 23.73519579472518,
+        "z": 0
+      },
+      "color": "red",
+      "rotation": 90,
+      "children": [
+        {
+          "type": "box",
+          "name": "Box_Shelf_19_L1_S_1",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 20.845107769035486,
+            "y": 21.61019579472518,
+            "z": 1.3
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_19",
+          "level": 1,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_19_L1_S_2",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 20.845107769035486,
+            "y": 21.91019579472518,
+            "z": 1.3
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_19",
+          "level": 1,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_19_L1_S_3",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 20.845107769035486,
+            "y": 22.21019579472518,
+            "z": 1.3
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_19",
+          "level": 1,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_19_L1_S_4",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 20.845107769035486,
+            "y": 22.510195794725178,
+            "z": 1.3
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_19",
+          "level": 1,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_19_L1_S_5",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 20.845107769035486,
+            "y": 22.81019579472518,
+            "z": 1.3
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_19",
+          "level": 1,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_19_L4_M_1",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 20.820107769035488,
+            "y": 24.135195794725178,
+            "z": 5.962
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_19",
+          "level": 4,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_19_L4_S_2",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 20.845107769035486,
+            "y": 24.46019579472518,
+            "z": 5.962
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_19",
+          "level": 4,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_19_L4_S_3",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 20.845107769035486,
+            "y": 24.760195794725178,
+            "z": 5.962
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_19",
+          "level": 4,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_19_L4_M_4",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 20.820107769035488,
+            "y": 25.08519579472518,
+            "z": 5.962
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_19",
+          "level": 4,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_19_L3_M_1",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 20.820107769035488,
+            "y": 21.635195794725178,
+            "z": 4.1
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_19",
+          "level": 3,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_19_L3_S_2",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 20.845107769035486,
+            "y": 21.96019579472518,
+            "z": 4.1
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_19",
+          "level": 3,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_19_L3_S_3",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 20.845107769035486,
+            "y": 22.260195794725178,
+            "z": 4.1
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_19",
+          "level": 3,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_19_L3_M_4",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 20.820107769035488,
+            "y": 22.58519579472518,
+            "z": 4.1
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_19",
+          "level": 3,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        }
+      ]
+    },
+    {
+      "type": "shelf",
+      "name": "Shelf_20",
+      "dimensions": {
+        "length": 8,
+        "width": 1.0,
+        "height": 6.0
+      },
+      "position": {
+        "x": 23.563411746765983,
+        "y": 23.615412700074565,
+        "z": 0
+      },
+      "color": "red",
+      "rotation": 90,
+      "children": [
+        {
+          "type": "box",
+          "name": "Box_Shelf_20_L3_M_1",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 23.563411746765983,
+            "y": 21.515412700074563,
+            "z": 4.1
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_20",
+          "level": 3,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_20_L3_S_2",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 23.58841174676598,
+            "y": 21.840412700074566,
+            "z": 4.1
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_20",
+          "level": 3,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_20_L3_S_3",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 23.58841174676598,
+            "y": 22.140412700074563,
+            "z": 4.1
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_20",
+          "level": 3,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_20_L3_M_4",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 23.563411746765983,
+            "y": 22.465412700074566,
+            "z": 4.1
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_20",
+          "level": 3,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_20_L1_S_1",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 23.58841174676598,
+            "y": 21.490412700074565,
+            "z": 1.3
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_20",
+          "level": 1,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_20_L1_S_2",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 23.58841174676598,
+            "y": 21.790412700074565,
+            "z": 1.3
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_20",
+          "level": 1,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_20_L1_S_3",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 23.58841174676598,
+            "y": 22.090412700074566,
+            "z": 1.3
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_20",
+          "level": 1,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_20_L1_S_4",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 23.58841174676598,
+            "y": 22.390412700074563,
+            "z": 1.3
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_20",
+          "level": 1,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_20_L1_S_5",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 23.58841174676598,
+            "y": 22.690412700074564,
+            "z": 1.3
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_20",
+          "level": 1,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        }
+      ]
+    },
+    {
+      "type": "shelf",
+      "name": "Shelf_21",
+      "dimensions": {
+        "length": 8,
+        "width": 1.0,
+        "height": 6.0
+      },
+      "position": {
+        "x": 26.306981972165108,
+        "y": 23.707032195574566,
+        "z": 0
+      },
+      "color": "red",
+      "rotation": 90,
+      "children": [
+        {
+          "type": "box",
+          "name": "Box_Shelf_21_L2_S_1",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 26.331981972165106,
+            "y": 21.582032195574566,
+            "z": 2.8
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_21",
+          "level": 2,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_21_L2_S_2",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 26.331981972165106,
+            "y": 21.882032195574567,
+            "z": 2.8
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_21",
+          "level": 2,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_21_L2_S_3",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 26.331981972165106,
+            "y": 22.182032195574568,
+            "z": 2.8
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_21",
+          "level": 2,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_21_L2_S_4",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 26.331981972165106,
+            "y": 22.48203219557457,
+            "z": 2.8
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_21",
+          "level": 2,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_21_L2_S_5",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 26.331981972165106,
+            "y": 22.782032195574565,
+            "z": 2.8
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_21",
+          "level": 2,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_21_L3_M_1",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 26.306981972165108,
+            "y": 21.607032195574565,
+            "z": 4.1
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_21",
+          "level": 3,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_21_L3_S_2",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 26.331981972165106,
+            "y": 21.932032195574568,
+            "z": 4.1
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_21",
+          "level": 3,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_21_L3_S_3",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 26.331981972165106,
+            "y": 22.232032195574565,
+            "z": 4.1
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_21",
+          "level": 3,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_21_L3_M_4",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 26.306981972165108,
+            "y": 22.557032195574568,
+            "z": 4.1
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_21",
+          "level": 3,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_21_L4_M_1",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 26.306981972165108,
+            "y": 24.107032195574565,
+            "z": 5.962
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_21",
+          "level": 4,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_21_L4_S_2",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 26.331981972165106,
+            "y": 24.432032195574568,
+            "z": 5.962
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_21",
+          "level": 4,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_21_L4_S_3",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 26.331981972165106,
+            "y": 24.73203219557457,
+            "z": 5.962
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_21",
+          "level": 4,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_21_L4_M_4",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 26.306981972165108,
+            "y": 25.057032195574568,
+            "z": 5.962
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_21",
+          "level": 4,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        }
+      ]
+    },
+    {
+      "type": "shelf",
+      "name": "Shelf_22",
+      "dimensions": {
+        "length": 8,
+        "width": 1.0,
+        "height": 6.0
+      },
+      "position": {
+        "x": 28.999060478590387,
+        "y": 23.772433847572472,
+        "z": 0
+      },
+      "color": "red",
+      "rotation": 90,
+      "children": [
+        {
+          "type": "box",
+          "name": "Box_Shelf_22_L2_M_1",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 28.999060478590387,
+            "y": 21.67243384757247,
+            "z": 2.8
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_22",
+          "level": 2,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_22_L2_S_2",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 29.024060478590386,
+            "y": 21.997433847572474,
+            "z": 2.8
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_22",
+          "level": 2,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_22_L2_S_3",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 29.024060478590386,
+            "y": 22.29743384757247,
+            "z": 2.8
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_22",
+          "level": 2,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_22_L2_M_4",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 28.999060478590387,
+            "y": 22.622433847572474,
+            "z": 2.8
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_22",
+          "level": 2,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_22_L1_M_1",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 28.999060478590387,
+            "y": 21.67243384757247,
+            "z": 1.3
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_22",
+          "level": 1,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_22_L1_S_2",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 29.024060478590386,
+            "y": 21.997433847572474,
+            "z": 1.3
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_22",
+          "level": 1,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_22_L1_S_3",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 29.024060478590386,
+            "y": 22.29743384757247,
+            "z": 1.3
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_22",
+          "level": 1,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_22_L1_M_4",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 28.999060478590387,
+            "y": 22.622433847572474,
+            "z": 1.3
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_22",
+          "level": 1,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        }
+      ]
+    },
+    {
+      "type": "shelf",
+      "name": "Shelf_23",
+      "dimensions": {
+        "length": 8,
+        "width": 1.0,
+        "height": 6.0
+      },
+      "position": {
+        "x": 31.67629151227205,
+        "y": 23.765122226078812,
+        "z": 0
+      },
+      "color": "red",
+      "rotation": 90,
+      "children": []
+    },
+    {
+      "type": "shelf",
+      "name": "Shelf_24",
+      "dimensions": {
+        "length": 8,
+        "width": 1.0,
+        "height": 6.0
+      },
+      "position": {
+        "x": 34.327346995582644,
+        "y": 23.76628448481139,
+        "z": 0
+      },
+      "color": "red",
+      "rotation": 90,
+      "children": [
+        {
+          "type": "box",
+          "name": "Box_Shelf_24_L1_M_1",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 34.327346995582644,
+            "y": 21.66628448481139,
+            "z": 1.3
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_24",
+          "level": 1,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_24_L1_S_2",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 34.35234699558264,
+            "y": 21.99128448481139,
+            "z": 1.3
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_24",
+          "level": 1,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_24_L1_S_3",
+          "dimensions": {
+            "length": 0.25,
+            "width": 0.25,
+            "height": 0.4
+          },
+          "position": {
+            "x": 34.35234699558264,
+            "y": 22.29128448481139,
+            "z": 1.3
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_24",
+          "level": 1,
+          "stack": 1,
+          "box_type": "small",
+          "rotation": 90
+        },
+        {
+          "type": "box",
+          "name": "Box_Shelf_24_L1_M_4",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 34.327346995582644,
+            "y": 22.61628448481139,
+            "z": 1.3
+          },
+          "usd_file": "Box.usd",
+          "on_shelf": true,
+          "shelf_name": "Shelf_24",
+          "level": 1,
+          "stack": 1,
+          "box_type": "medium",
+          "rotation": 90
+        }
+      ]
+    },
+    {
+      "type": "conveyor",
+      "name": "Conveyor_0",
+      "dimensions": {
+        "length": 2,
+        "width": 1,
+        "height": 0.1
+      },
+      "position": {
+        "x": 2.0,
+        "y": 0.5,
+        "z": 0
+      },
+      "color": "lightgray"
+    },
+    {
+      "type": "conveyor",
+      "name": "Conveyor_1",
+      "dimensions": {
+        "length": 2,
+        "width": 1,
+        "height": 0.1
+      },
+      "position": {
+        "x": 4.0,
+        "y": 0.5,
+        "z": 0
+      },
+      "color": "lightgray"
+    },
+    {
+      "type": "conveyor",
+      "name": "Conveyor_2",
+      "dimensions": {
+        "length": 2,
+        "width": 1,
+        "height": 0.1
+      },
+      "position": {
+        "x": 6.0,
+        "y": 0.5,
+        "z": 0
+      },
+      "color": "lightgray"
+    },
+    {
+      "type": "conveyor",
+      "name": "Conveyor_3",
+      "dimensions": {
+        "length": 2,
+        "width": 1,
+        "height": 0.1
+      },
+      "position": {
+        "x": 8.0,
+        "y": 0.5,
+        "z": 0
+      },
+      "color": "lightgray"
+    },
+    {
+      "type": "conveyor",
+      "name": "Conveyor_4",
+      "dimensions": {
+        "length": 2,
+        "width": 1,
+        "height": 0.1
+      },
+      "position": {
+        "x": 10.0,
+        "y": 0.5,
+        "z": 0
+      },
+      "color": "lightgray"
+    },
+    {
+      "type": "conveyor",
+      "name": "Conveyor_5",
+      "dimensions": {
+        "length": 2,
+        "width": 1,
+        "height": 0.1
+      },
+      "position": {
+        "x": 12.0,
+        "y": 0.5,
+        "z": 0
+      },
+      "color": "lightgray"
+    },
+    {
+      "type": "conveyor",
+      "name": "Conveyor_6",
+      "dimensions": {
+        "length": 2,
+        "width": 1,
+        "height": 0.1
+      },
+      "position": {
+        "x": 14.0,
+        "y": 0.5,
+        "z": 0
+      },
+      "color": "lightgray"
+    },
+    {
+      "type": "conveyor",
+      "name": "Conveyor_7",
+      "dimensions": {
+        "length": 2,
+        "width": 1,
+        "height": 0.1
+      },
+      "position": {
+        "x": 16.0,
+        "y": 0.5,
+        "z": 0
+      },
+      "color": "lightgray"
+    },
+    {
+      "type": "conveyor",
+      "name": "Conveyor_8",
+      "dimensions": {
+        "length": 2,
+        "width": 1,
+        "height": 0.1
+      },
+      "position": {
+        "x": 18.0,
+        "y": 0.5,
+        "z": 0
+      },
+      "color": "lightgray"
+    },
+    {
+      "type": "conveyor",
+      "name": "Conveyor_9",
+      "dimensions": {
+        "length": 2,
+        "width": 1,
+        "height": 0.1
+      },
+      "position": {
+        "x": 20.0,
+        "y": 0.5,
+        "z": 0
+      },
+      "color": "lightgray"
+    },
+    {
+      "type": "conveyor",
+      "name": "Conveyor_10",
+      "dimensions": {
+        "length": 2,
+        "width": 1,
+        "height": 0.1
+      },
+      "position": {
+        "x": 22.0,
+        "y": 0.5,
+        "z": 0
+      },
+      "color": "lightgray"
+    },
+    {
+      "type": "conveyor",
+      "name": "Conveyor_11",
+      "dimensions": {
+        "length": 2,
+        "width": 1,
+        "height": 0.1
+      },
+      "position": {
+        "x": 24.0,
+        "y": 0.5,
+        "z": 0
+      },
+      "color": "lightgray"
+    },
+    {
+      "type": "conveyor",
+      "name": "Conveyor_12",
+      "dimensions": {
+        "length": 2,
+        "width": 1,
+        "height": 0.1
+      },
+      "position": {
+        "x": 26.0,
+        "y": 0.5,
+        "z": 0
+      },
+      "color": "lightgray"
+    },
+    {
+      "type": "conveyor",
+      "name": "Conveyor_13",
+      "dimensions": {
+        "length": 2,
+        "width": 1,
+        "height": 0.1
+      },
+      "position": {
+        "x": 28.0,
+        "y": 0.5,
+        "z": 0
+      },
+      "color": "lightgray"
+    },
+    {
+      "type": "conveyor",
+      "name": "Conveyor_14",
+      "dimensions": {
+        "length": 2,
+        "width": 1,
+        "height": 0.1
+      },
+      "position": {
+        "x": 30.0,
+        "y": 0.5,
+        "z": 0
+      },
+      "color": "lightgray"
+    },
+    {
+      "type": "conveyor",
+      "name": "Conveyor_15",
+      "dimensions": {
+        "length": 2,
+        "width": 1,
+        "height": 0.1
+      },
+      "position": {
+        "x": 32.0,
+        "y": 0.5,
+        "z": 0
+      },
+      "color": "lightgray"
+    },
+    {
+      "type": "conveyor",
+      "name": "Conveyor_16",
+      "dimensions": {
+        "length": 2,
+        "width": 1,
+        "height": 0.1
+      },
+      "position": {
+        "x": 34.0,
+        "y": 0.5,
+        "z": 0
+      },
+      "color": "lightgray"
+    },
+    {
+      "type": "conveyor",
+      "name": "Conveyor_17",
+      "dimensions": {
+        "length": 2,
+        "width": 1,
+        "height": 0.1
+      },
+      "position": {
+        "x": 36.0,
+        "y": 0.5,
+        "z": 0
+      },
+      "color": "lightgray"
+    },
+    {
+      "type": "crate",
+      "name": "Pallet_1",
+      "dimensions": {
+        "length": 1.2,
+        "width": 1.2,
+        "height": 0.15
+      },
+      "position": {
+        "x": 7.93645664567083,
+        "y": 2.1705077516332074,
+        "z": 0
+      },
+      "color": "yellow",
+      "children": [
+        {
+          "type": "box",
+          "name": "Box_Pallet_1_L1_M_1",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 7.53645664567083,
+            "y": 1.7705077516332075,
+            "z": 0.15
+          },
+          "usd_file": "Box.usd",
+          "on_crate": true,
+          "crate_name": "Pallet_1",
+          "layer": 1,
+          "box_type": "medium"
+        },
+        {
+          "type": "box",
+          "name": "Box_Pallet_1_L1_M_2",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 7.93645664567083,
+            "y": 1.7705077516332075,
+            "z": 0.15
+          },
+          "usd_file": "Box.usd",
+          "on_crate": true,
+          "crate_name": "Pallet_1",
+          "layer": 1,
+          "box_type": "medium"
+        },
+        {
+          "type": "box",
+          "name": "Box_Pallet_1_L1_M_3",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 8.28645664567083,
+            "y": 1.7705077516332075,
+            "z": 0.15
+          },
+          "usd_file": "Box.usd",
+          "on_crate": true,
+          "crate_name": "Pallet_1",
+          "layer": 1,
+          "box_type": "medium"
+        },
+        {
+          "type": "box",
+          "name": "Box_Pallet_1_L1_M_4",
+          "dimensions": {
+            "length": 0.3,
+            "width": 0.3,
+            "height": 0.5
+          },
+          "position": {
+            "x": 7.53645664567083,
+            "y": 2.1705077516332074,
+            "z": 0.15
+          },
+          "usd_file": "Box.usd",
+          "on_crate": true,
+          "crate_name": "Pallet_1",
+          "layer": 1,
+          "box_type": "medium"
+        }
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "type": "robot_arm",
+      "name": "RobotArm_1",
+      "dimensions": {
+        "diameter": 0.8,
+        "height": 1
+      },
+      "position": {
+        "x": 7.93645664567083,
+        "y": 1.1630394036850586,
+        "z": 0
+      },
+      "rotation": 0,
+      "color": "green"
+    },
+    {
+      "type": "agv",
+      "name": "AGV_1",
+      "shape": "cylinder",
+      "dimensions": {
+        "diameter": 0.8,
+        "height": 1
+      },
+      "position": {
+        "x": 11.83917642047276,
+        "y": 23.308549425171822,
+        "z": 0
+      },
+      "model": "create3",
+      "rotation": 0,
+      "color": "blue"
+    },
+    {
+      "type": "agv",
+      "name": "AGV_2",
+      "shape": "cylinder",
+      "dimensions": {
+        "diameter": 0.8,
+        "height": 1
+      },
+      "position": {
+        "x": 35.34325076532972,
+        "y": 35.14474473001531,
+        "z": 0
+      },
+      "model": "ridgeback",
+      "rotation": 0,
+      "color": "blue"
+    },
+    {
+      "type": "agv",
+      "name": "AGV_3",
+      "shape": "cylinder",
+      "dimensions": {
+        "diameter": 0.8,
+        "height": 1
+      },
+      "position": {
+        "x": 13.032165785196355,
+        "y": 35.0030665402859,
+        "z": 0
+      },
+      "model": "create3",
+      "rotation": 0,
+      "color": "blue"
+    }
+  ],
+  "statistics": {
+    "total_shelves": 24,
+    "total_boxes": 111,
+    "space_utilization": 0.28625,
+    "shelf_coverage": 0.26375,
+    "reachability_ratio": 1.0,
+    "all_reachable": true
+  }
+}

@@ -1,0 +1,269 @@
+{
+    "version": "1.0",
+    "file_records": [
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_FireExtinguisher_D.png",
+            "source_hash": "e0a775171291af6687e53432aa2bdd8dbb22c56f",
+            "target_url": "./SubUSDs/textures/T_FireExtinguisher_D.png",
+            "target_hash": "e0a775171291af6687e53432aa2bdd8dbb22c56f"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_FireExtinguisher_N.png",
+            "source_hash": "865cdeb64ed9bd91e22ebd66a89622a883f36506",
+            "target_url": "./SubUSDs/textures/T_FireExtinguisher_N.png",
+            "target_hash": "865cdeb64ed9bd91e22ebd66a89622a883f36506"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_FireExtinguisher_ORM.png",
+            "source_hash": "753d7389e67dbd1a60b9c1d9be894914c9f7a1ff",
+            "target_url": "./SubUSDs/textures/T_FireExtinguisher_ORM.png",
+            "target_hash": "753d7389e67dbd1a60b9c1d9be894914c9f7a1ff"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_FloorStripes_D.png",
+            "source_hash": "3e7019f63c3664b50787220cd4dc879aaca2dc51",
+            "target_url": "./SubUSDs/textures/T_FloorStripes_D.png",
+            "target_hash": "3e7019f63c3664b50787220cd4dc879aaca2dc51"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_FloorStripes_M.png",
+            "source_hash": "b07fa2396403dee5c9e89ea6d490154fa613ca27",
+            "target_url": "./SubUSDs/textures/T_FloorStripes_M.png",
+            "target_hash": "b07fa2396403dee5c9e89ea6d490154fa613ca27"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_FloorStripes_N.png",
+            "source_hash": "fdc8c1ad5ddcb40ba4a3161f4f0b7df10047bf20",
+            "target_url": "./SubUSDs/textures/T_FloorStripes_N.png",
+            "target_hash": "fdc8c1ad5ddcb40ba4a3161f4f0b7df10047bf20"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_FloorStripes_ORM.png",
+            "source_hash": "78f6580d4bdbc679f7a2fd7d90510ddc9714b645",
+            "target_url": "./SubUSDs/textures/T_FloorStripes_ORM.png",
+            "target_hash": "78f6580d4bdbc679f7a2fd7d90510ddc9714b645"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_Floor_01_N.png",
+            "source_hash": "31caede91c4ddcf5c5c885723e8a0bee608006d8",
+            "target_url": "./SubUSDs/textures/T_Floor_01_N.png",
+            "target_hash": "31caede91c4ddcf5c5c885723e8a0bee608006d8"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_RackSetA_01_D.png",
+            "source_hash": "f0434d50fe713963fcc8c5c4820c2b3d1797a4a2",
+            "target_url": "./SubUSDs/textures/T_RackSetA_01_D.png",
+            "target_hash": "f0434d50fe713963fcc8c5c4820c2b3d1797a4a2"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_RackSetA_01_M.png",
+            "source_hash": "7b7622d00d3e90559bf4f06c4a2415b7a3290f68",
+            "target_url": "./SubUSDs/textures/T_RackSetA_01_M.png",
+            "target_hash": "7b7622d00d3e90559bf4f06c4a2415b7a3290f68"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_RackSetA_01_N.png",
+            "source_hash": "80bee66366627aa8e9ffbe2bac6f7ddb82b9bdbd",
+            "target_url": "./SubUSDs/textures/T_RackSetA_01_N.png",
+            "target_hash": "80bee66366627aa8e9ffbe2bac6f7ddb82b9bdbd"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_RackSetA_01_ORM.png",
+            "source_hash": "16f003d37d4b8923c57cadf43e48097613c5d666",
+            "target_url": "./SubUSDs/textures/T_RackSetA_01_ORM.png",
+            "target_hash": "16f003d37d4b8923c57cadf43e48097613c5d666"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_RackSetA_02_D.png",
+            "source_hash": "711f5312ddf5930f64b4c9c8a6152f5fbc4212f8",
+            "target_url": "./SubUSDs/textures/T_RackSetA_02_D.png",
+            "target_hash": "711f5312ddf5930f64b4c9c8a6152f5fbc4212f8"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_RackSetA_02_M.png",
+            "source_hash": "0f1961c0fccdeae83a595032bf0bd15e5473d6fe",
+            "target_url": "./SubUSDs/textures/T_RackSetA_02_M.png",
+            "target_hash": "0f1961c0fccdeae83a595032bf0bd15e5473d6fe"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_RackSetA_02_N.png",
+            "source_hash": "42673ad39076273807ab6fe4636003a9141b703a",
+            "target_url": "./SubUSDs/textures/T_RackSetA_02_N.png",
+            "target_hash": "42673ad39076273807ab6fe4636003a9141b703a"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_RackSetA_02_ORM.png",
+            "source_hash": "39c295ca78aee07739b7320b7dd62636ac39d4c1",
+            "target_url": "./SubUSDs/textures/T_RackSetA_02_ORM.png",
+            "target_hash": "39c295ca78aee07739b7320b7dd62636ac39d4c1"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_RackSetA_03_D.png",
+            "source_hash": "b46e588c953ed7449d42183948a9cee2e0db615b",
+            "target_url": "./SubUSDs/textures/T_RackSetA_03_D.png",
+            "target_hash": "b46e588c953ed7449d42183948a9cee2e0db615b"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_RackSetA_03_M.png",
+            "source_hash": "ba85e1a3ee617efdc5c5d09acf0fd9ff92bcde6f",
+            "target_url": "./SubUSDs/textures/T_RackSetA_03_M.png",
+            "target_hash": "ba85e1a3ee617efdc5c5d09acf0fd9ff92bcde6f"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_RackSetA_03_N.png",
+            "source_hash": "618b5ee8106de325252c86c40bd2c652329e884f",
+            "target_url": "./SubUSDs/textures/T_RackSetA_03_N.png",
+            "target_hash": "618b5ee8106de325252c86c40bd2c652329e884f"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_RackSetA_03_ORM.png",
+            "source_hash": "d82f600c34b3be25a8b32c74f281dd485283e1d9",
+            "target_url": "./SubUSDs/textures/T_RackSetA_03_ORM.png",
+            "target_hash": "d82f600c34b3be25a8b32c74f281dd485283e1d9"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_RackSetA_04_D.png",
+            "source_hash": "1b576ae365b1d6531c68f78676f0504ee87e7107",
+            "target_url": "./SubUSDs/textures/T_RackSetA_04_D.png",
+            "target_hash": "1b576ae365b1d6531c68f78676f0504ee87e7107"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_RackSetA_04_M.png",
+            "source_hash": "afc8ebdb7d636820fc0b5b386abf580424f92063",
+            "target_url": "./SubUSDs/textures/T_RackSetA_04_M.png",
+            "target_hash": "afc8ebdb7d636820fc0b5b386abf580424f92063"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_RackSetA_04_N.png",
+            "source_hash": "205b3c45cf8e3f651d96181c851c57e4123b3218",
+            "target_url": "./SubUSDs/textures/T_RackSetA_04_N.png",
+            "target_hash": "205b3c45cf8e3f651d96181c851c57e4123b3218"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_RackSetA_04_ORM.png",
+            "source_hash": "5fe979353adf4f13a69b463e6eeaf9f5ce3ba5b9",
+            "target_url": "./SubUSDs/textures/T_RackSetA_04_ORM.png",
+            "target_hash": "5fe979353adf4f13a69b463e6eeaf9f5ce3ba5b9"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_RackShield_D.png",
+            "source_hash": "2a433f65746e420c14e0de4e068d74057fe61d4e",
+            "target_url": "./SubUSDs/textures/T_RackShield_D.png",
+            "target_hash": "2a433f65746e420c14e0de4e068d74057fe61d4e"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_RackShield_N.png",
+            "source_hash": "d39fa3d85779a8a9bdf20792491d14acfc50ec35",
+            "target_url": "./SubUSDs/textures/T_RackShield_N.png",
+            "target_hash": "d39fa3d85779a8a9bdf20792491d14acfc50ec35"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_RackShield_ORM.png",
+            "source_hash": "165db231f8743d71a1bdc8cd743e13014d8e90b8",
+            "target_url": "./SubUSDs/textures/T_RackShield_ORM.png",
+            "target_hash": "165db231f8743d71a1bdc8cd743e13014d8e90b8"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_SignsC_D.png",
+            "source_hash": "70a46ba87451caecc181dff1b5ff62d554acd19d",
+            "target_url": "./SubUSDs/textures/T_SignsC_D.png",
+            "target_hash": "70a46ba87451caecc181dff1b5ff62d554acd19d"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_SignsC_ORM.png",
+            "source_hash": "df30b3ed39d9473acb4580e86131433b817ab471",
+            "target_url": "./SubUSDs/textures/T_SignsC_ORM.png",
+            "target_hash": "df30b3ed39d9473acb4580e86131433b817ab471"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/MI_CeilingA_06b.mdl",
+            "source_hash": "fbec776447df0ca8e5a2fa4dee411fb12955cd3a",
+            "target_url": "./SubUSDs/materials/MI_CeilingA_06b.mdl",
+            "target_hash": "b52e7ba3e9952f0dcbdf6c3c2dbb069c024d4bea"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/MI_LampCeilingA.mdl",
+            "source_hash": "5250fb296e82b8a6ff6389ace2555a2246262036",
+            "target_url": "./SubUSDs/materials/MI_LampCeilingA.mdl",
+            "target_hash": "e3bf4aa73c43293b3c6ec4f4477bdfc8fb3d8eaf"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/MI_RackShield_01.mdl",
+            "source_hash": "a67807428e1543d330b9967fa4a01585e08fcef0",
+            "target_url": "./SubUSDs/materials/MI_RackShield_01.mdl",
+            "target_hash": "d87d7e92ad328d875d790b1b7defe5ee76c43062"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/M_WallBoard_01.mdl",
+            "source_hash": "09a3fb8c48f616da9879401ea9f77cf55090956d",
+            "target_url": "./SubUSDs/materials/M_WallBoard_01.mdl",
+            "target_hash": "91c9982b19e225ef0caa9f13f0448d942c6233c4"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_Floor_01_D.png",
+            "source_hash": "9347b76a8c3df29a974658c59e7b77623bcb61e2",
+            "target_url": "./SubUSDs/textures/T_Floor_01_D.png",
+            "target_hash": "9347b76a8c3df29a974658c59e7b77623bcb61e2"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_BeamsA_N.png",
+            "source_hash": "f2cb98e82cf4a483920576d924f9835e0fc049d8",
+            "target_url": "./SubUSDs/textures/T_BeamsA_N.png",
+            "target_hash": "f2cb98e82cf4a483920576d924f9835e0fc049d8"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/Alum_Anodized_roughness.png",
+            "source_hash": "51e619eb64c00e20382e01b1d0a27c8ccd66ee13",
+            "target_url": "./SubUSDs/textures/Alum_Anodized_roughness.png",
+            "target_hash": "51e619eb64c00e20382e01b1d0a27c8ccd66ee13"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_WallBoard_01_N.png",
+            "source_hash": "5eac0c40f93861c932d98d7c037ca9688fe9c436",
+            "target_url": "./SubUSDs/textures/T_WallBoard_01_N.png",
+            "target_hash": "5eac0c40f93861c932d98d7c037ca9688fe9c436"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/OmniUe4Function.mdl",
+            "source_hash": "c6584d48a5a54f7014178d5a0f77c7f348ab9373",
+            "target_url": "./SubUSDs/materials/OmniUe4Function.mdl",
+            "target_hash": "2c22c5b3625310e3a38ec80255103acb8b9f8bfe"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_BeamsA_M.png",
+            "source_hash": "d105995649cc7055faefc97cb69a3b8e66f5aa45",
+            "target_url": "./SubUSDs/textures/T_BeamsA_M.png",
+            "target_hash": "d105995649cc7055faefc97cb69a3b8e66f5aa45"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/OmniUe4Base.mdl",
+            "source_hash": "da1a9fc380cf9a5fb184e1ebcbfb11faaa0d5590",
+            "target_url": "./SubUSDs/materials/OmniUe4Base.mdl",
+            "target_hash": "e652bdfb59cb25e47a3a8b2eee83205345fd67fc"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_WallBoard_01_D.png",
+            "source_hash": "89fbfb165bc29e9bb46e1c32abcd45055e9ae4d8",
+            "target_url": "./SubUSDs/textures/T_WallBoard_01_D.png",
+            "target_hash": "89fbfb165bc29e9bb46e1c32abcd45055e9ae4d8"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_BeamsA_ORM.png",
+            "source_hash": "86f9a3d1c6a8a5157819e4ff565fc42d80f2e351",
+            "target_url": "./SubUSDs/textures/T_BeamsA_ORM.png",
+            "target_hash": "86f9a3d1c6a8a5157819e4ff565fc42d80f2e351"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_WallBoard_01_ORM.png",
+            "source_hash": "20c13e31c8d34624b0c93c9906158adedbb223ef",
+            "target_url": "./SubUSDs/textures/T_WallBoard_01_ORM.png",
+            "target_hash": "20c13e31c8d34624b0c93c9906158adedbb223ef"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/Isaac/4.5/Isaac/Environments/Simple_Warehouse/Materials/Textures/T_WallBoard_01_M.png",
+            "source_hash": "55ccfc6d023598434dc992f41686e1509e0b6a68",
+            "target_url": "./SubUSDs/textures/T_WallBoard_01_M.png",
+            "target_hash": "55ccfc6d023598434dc992f41686e1509e0b6a68"
+        }
+    ]
+}

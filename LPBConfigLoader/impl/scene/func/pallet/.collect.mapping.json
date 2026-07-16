@@ -1,0 +1,53 @@
+{
+    "version": "1.0",
+    "file_records": [
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/DigitalTwin/Materials/Base/Metals/Metal_Glossy_A.mdl",
+            "source_hash": "0e573129ceeaa67736569c493021726929dc230e",
+            "target_url": "./SubUSDs/materials/Metal_Glossy_A.mdl",
+            "target_hash": "2aceae305b1bbe67437e0cfbfbabfabc71c5990a"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/DigitalTwin/Materials/Base/Wood/Wood_New_A.mdl",
+            "source_hash": "e98f3010a03a69d95490983c04b28b8716133377",
+            "target_url": "./SubUSDs/materials/Wood_New_A.mdl",
+            "target_hash": "bff6da580761819c91d6e4907549cc1d6f31343a"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/DigitalTwin/Materials/Base/Metals/Glossy/T_Metal_Glossy_A_Albedo.png",
+            "source_hash": "9b484452a808d7ed725dc75589e5d3aec56a960f",
+            "target_url": "./SubUSDs/textures/T_Metal_Glossy_A_Albedo.png",
+            "target_hash": "9b484452a808d7ed725dc75589e5d3aec56a960f"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/DigitalTwin/Materials/Base/Wood/Natural/T_Wood_New_A1_Albedo.png",
+            "source_hash": "2aafd198fb07c9731905073f797a09e65017abec",
+            "target_url": "./SubUSDs/textures/T_Wood_New_A1_Albedo.png",
+            "target_hash": "2aafd198fb07c9731905073f797a09e65017abec"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/DigitalTwin/Materials/Base/Metals/Glossy/T_Metal_Glossy_A_Normal.png",
+            "source_hash": "7bfdda5c88865aa50900a211394e8bf8ba018b9b",
+            "target_url": "./SubUSDs/textures/T_Metal_Glossy_A_Normal.png",
+            "target_hash": "7bfdda5c88865aa50900a211394e8bf8ba018b9b"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/DigitalTwin/Materials/Base/Wood/Natural/T_Wood_New_A1_ORM.png",
+            "source_hash": "4f65994ae4780b2b8aa6791cecc4cad635f974fe",
+            "target_url": "./SubUSDs/textures/T_Wood_New_A1_ORM.png",
+            "target_hash": "4f65994ae4780b2b8aa6791cecc4cad635f974fe"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/DigitalTwin/Materials/Base/Metals/Glossy/T_Metal_Glossy_A_ORM.png",
+            "source_hash": "172e4565cd36145f88fa02d150de1bcefe8a1e9b",
+            "target_url": "./SubUSDs/textures/T_Metal_Glossy_A_ORM.png",
+            "target_hash": "172e4565cd36145f88fa02d150de1bcefe8a1e9b"
+        },
+        {
+            "source_url": "D:/Development/isaacsim_assets/Assets/DigitalTwin/Materials/Base/Wood/Natural/T_Wood_New_A1_Normal.png",
+            "source_hash": "8702df68e7723056784bcf5cb3143c2b8778ee41",
+            "target_url": "./SubUSDs/textures/T_Wood_New_A1_Normal.png",
+            "target_hash": "8702df68e7723056784bcf5cb3143c2b8778ee41"
+        }
+    ]
+}
