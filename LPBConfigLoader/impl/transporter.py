@@ -223,7 +223,6 @@ Prefer axis-aligned warehouse paths and keep clearance around static objects.
 
     def _set_base_world_pose_fallback(self, base_pos):
         base_pos = np.array(base_pos, dtype=float)
-        self.position = base_pos.copy()
         self._last_base_world_position = base_pos.copy()
         try:
             self.ridgeback.set_world_pose(position=base_pos.tolist())
