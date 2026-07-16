@@ -1941,7 +1941,7 @@ class TestEnv:
             },
         )
         try:
-            agent.set_arm_display_pose(mode="neutral")
+            agent.reset()
         except Exception:
             pass
         return True
@@ -2560,20 +2560,13 @@ class TestEnv:
 
         if phase == "lower_pick":
             t = self._phase_ratio(phase_elapsed, durations.get("lower_pick", 0.8))
-            ee_pos = self._manipulator_end_effector_position(agent)
-            if ee_pos is not None:
-                package_half = self._package_world_half_height(
-                    package_name=package_name, clearance=0.04
-                )
-                gripper_target = [
-                    ee_pos[0],
-                    ee_pos[1],
-                    ee_pos[2] - package_half - 0.04,
-                ]
-                smooth_pos = self._lerp_vec3(
-                    package_start, gripper_target, self._smoothstep(t)
-                )
-                self._set_package_world_position(package_name, smooth_pos)
+            package_half = self._package_world_half_height(
+                package_name=package_name, clearance=0.04
+            )
+            lift_target_z = package_start[2] + package_half + 0.05
+            smooth_z = package_start[2] + (lift_target_z - package_start[2]) * self._smoothstep(t)
+            smooth_pos = [package_start[0], package_start[1], smooth_z]
+            self._set_package_world_position(package_name, smooth_pos)
             if phase_elapsed >= float(durations.get("lower_pick", 0.8)) or self._manipulator_end_effector_near(
                 agent,
                 package_start,
@@ -3044,7 +3037,15 @@ class TestEnv:
         if not record:
             return
         base = self._agent_position(agent)
-        carrier_pos = [base[0], base[1], max(base[2] + 0.18, 0.18)]
+        pallet_name = record["pallet_name"]
+        try:
+            pallet_obj = self._get_pallet(pallet_name=pallet_name)
+            _, _, pallet_height = self._object_size_xyz(pallet_obj, default=(1.2, 1.0, 0.25))
+        except Exception:
+            pallet_height = 0.25
+        platform_surface_z = 0.19
+        pallet_bottom_z = base[2] + platform_surface_z + 0.02
+        carrier_pos = [base[0], base[1], pallet_bottom_z + pallet_height * 0.5]
         self._move_pallet_stack(
             record["pallet_name"],
             carrier_pos,
