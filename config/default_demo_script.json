@@ -1,0 +1,71 @@
+{
+  "name": "large_pick_conveyor_pallet_transport_demo",
+  "description": "Two-shelf visual flow: shuttle pick queue -> long conveyor -> end slot -> palletizing arm -> long pallet transport.",
+  "default_delay_seconds": 0.25,
+  "steps": [
+    {
+      "label": "Step 1 - pick two packages from shelf 1 and place them on conveyor start",
+      "command": "shuttle_pick_to_conveyor",
+      "params": {
+        "shelf_index": 1,
+        "package_names": ["ShelfPkg_1", "ShelfPkg_2"],
+        "conveyor_name": "DemoConveyor",
+        "shuttle_name": "shuttle1",
+        "drop_spacing": 0.45
+      }
+    },
+    {
+      "label": "Step 2 - pick one package from shelf 2 and place it on conveyor start",
+      "wait_for_idle": true,
+      "command": "shuttle_pick_to_conveyor",
+      "params": {
+        "shelf_index": 2,
+        "package_names": ["ShelfPkg_3"],
+        "conveyor_name": "DemoConveyor",
+        "shuttle_name": "shuttle1",
+        "drop_spacing": 0.45
+      }
+    },
+    {
+      "label": "Step 3 - palletize first conveyor candidate",
+      "wait_for_idle": true,
+      "delay_seconds": 8.5,
+      "command": "arm_pick_place",
+      "params": {
+        "candidate_index": 1,
+        "target": [21.15, 7.8, 0.0],
+        "arm_name": "pallet_arm1"
+      }
+    },
+    {
+      "label": "Step 4 - palletize second conveyor candidate",
+      "wait_for_idle": true,
+      "command": "arm_pick_place",
+      "params": {
+        "candidate_index": 1,
+        "target": [21.6, 7.8, 0.0],
+        "arm_name": "pallet_arm1"
+      }
+    },
+    {
+      "label": "Step 5 - palletize third conveyor candidate",
+      "wait_for_idle": true,
+      "command": "arm_pick_place",
+      "params": {
+        "candidate_index": 1,
+        "target": [21.15, 8.25, 0.0],
+        "arm_name": "pallet_arm1"
+      }
+    },
+    {
+      "label": "Step 6 - transport pallet to outbound point",
+      "wait_for_idle": true,
+      "command": "transporter_move_pallet",
+      "params": {
+        "pallet_index": 1,
+        "target": [25.0, 12.0, 0.0],
+        "transporter_name": "transporter1"
+      }
+    }
+  ]
+}
