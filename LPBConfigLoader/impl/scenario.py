@@ -1816,8 +1816,9 @@ class TestEnv:
                 )
 
         if ee_pos is None:
-            self._set_package_world_position(package_name, fallback_pos)
-            return fallback_pos
+            smooth_pos = self._smooth_follow_target(step, fallback_pos, key="_smooth_fallback")
+            self._set_package_world_position(package_name, smooth_pos)
+            return smooth_pos
 
         dims = self._package_dimensions_for(package_name)
         package_height = float(self._dimensions_xyz(dims, default=(0.3, 0.3, 0.5))[2])
@@ -1834,7 +1835,7 @@ class TestEnv:
                 step["_end_effector_pose_rejected"] = True
                 self.add_log(
                     "WARN",
-                    "Shuttle end-effector pose rejected, using fallback package path",
+                    "Shuttle end-effector pose rejected, using smooth fallback package path",
                     {
                         "agent": self._agent_name(agent),
                         "package_name": package_name,
@@ -1844,12 +1845,15 @@ class TestEnv:
                         "min_ee_z": min_ee_z,
                     },
                 )
-            self._set_package_world_position(package_name, fallback_pos)
-            return fallback_pos
+            smooth_pos = self._smooth_follow_target(step, fallback_pos, key="_smooth_fallback")
+            self._set_package_world_position(package_name, smooth_pos)
+            return smooth_pos
 
         z_offset = float(step.get("gripper_package_z_offset", package_height))
         package_pos = [ee_pos[0], ee_pos[1], ee_pos[2] - z_offset]
         self._set_package_world_position(package_name, package_pos)
+        # Reset smooth target to current ee position so next rejection starts from here
+        step["_smooth_fallback"] = list(package_pos)
         return package_pos
  
     def _visual_shuttle_place_on_conveyor(self, agent, step):
@@ -2983,6 +2987,20 @@ class TestEnv:
         end = self._vec3(end)
         t = max(0.0, min(float(t), 1.0))
         return [start[i] + (end[i] - start[i]) * t for i in range(3)]
+
+    def _smooth_follow_target(self, step, target, key="_smooth_fallback", alpha=0.25):
+        target = self._vec3(target)
+        prev = step.get(key)
+        if prev is None:
+            step[key] = list(target)
+            return target
+        smooth = [
+            prev[0] + (target[0] - prev[0]) * alpha,
+            prev[1] + (target[1] - prev[1]) * alpha,
+            prev[2] + (target[2] - prev[2]) * alpha,
+        ]
+        step[key] = smooth
+        return smooth
 
     def _set_package_velocity(self, package_name, linear=None, angular=None):
         stage = omni.usd.get_context().get_stage()
