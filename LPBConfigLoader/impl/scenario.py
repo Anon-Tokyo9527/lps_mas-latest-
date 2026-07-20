@@ -1822,14 +1822,8 @@ class TestEnv:
         dims = self._package_dimensions_for(package_name)
         package_height = float(self._dimensions_xyz(dims, default=(0.3, 0.3, 0.5))[2])
         ee_pos = self._vec3(ee_pos)
-        sane_distance = float(step.get("gripper_pose_sane_distance", 1.2))
         min_ee_z = float(step.get("gripper_min_world_z", max(0.25, package_height + 0.08)))
-        distance_to_fallback = math.sqrt(sum((ee_pos[i] - fallback_pos[i]) ** 2 for i in range(3)))
-        if (
-            not all(math.isfinite(float(value)) for value in ee_pos)
-            or distance_to_fallback > sane_distance
-            or float(ee_pos[2]) < min_ee_z
-        ):
+        if not all(math.isfinite(float(value)) for value in ee_pos) or float(ee_pos[2]) < min_ee_z:
             if not step.get("_end_effector_pose_rejected"):
                 step["_end_effector_pose_rejected"] = True
                 self.add_log(
@@ -1840,7 +1834,6 @@ class TestEnv:
                         "package_name": package_name,
                         "ee_pos": ee_pos,
                         "fallback_pos": fallback_pos,
-                        "distance": distance_to_fallback,
                         "min_ee_z": min_ee_z,
                     },
                 )
