@@ -1431,10 +1431,9 @@ class TestEnv:
         if op == "shuttle_move_to":
             agent = self._get_shuttle(step.get("agent_name"))
             done = agent.move_to(step["target"])
-            if hasattr(agent, "sync_pos"):
-                agent.sync_pos()
-            if hasattr(agent, "set_arm_display_pose"):
-                agent.set_arm_display_pose(target=step["target"], mode="neutral")
+            if done:
+                if hasattr(agent, "set_arm_display_pose"):
+                    agent.set_arm_display_pose(target=step["target"], mode="neutral")
             self._sync_virtual_holds(agent)
             return done or self._step_timed_out(step, timeout_seconds=8.0)
 

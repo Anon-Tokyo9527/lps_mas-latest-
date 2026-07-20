@@ -253,9 +253,8 @@ Return a A2A message. The `body` must contain:
 
         self.ridgeback.apply_action(action)
 
-        # === 同步机械臂的位置和角度 ===
+        # === 同步机械臂的位置 ===
         self.sync_pos()
-        self.set_arm_display_pose(target=world_target, mode="neutral", yaw=target_angle)
 
         return False
         
@@ -369,7 +368,6 @@ Return a A2A message. The `body` must contain:
 
 
     def set_arm_display_pose(self, target=None, mode="neutral", yaw=None):
-        self.sync_pos()
         desired = self._arm_display_joint_targets(target=target, mode=mode)
 
         if yaw is None and target is not None:
