@@ -2583,7 +2583,12 @@ class TestEnv:
             return False
 
         if phase == "grip":
+            saved = step.get("_mp_lift_pos") or self._package_world_position(package_name) or package_start
             self._sync_manipulator_attached_package(agent, package_name, package_start)
+            t = self._phase_ratio(phase_elapsed, 0.35)
+            target = self._package_world_position(package_name) or saved
+            smooth = self._lerp_vec3(saved, target, self._smoothstep(t))
+            self._set_package_world_position(package_name, smooth)
             if phase_elapsed >= float(durations.get("grip", 0.35)):
                 self._set_manipulator_phase(step, "lift", now, agent, package_name)
             return False
