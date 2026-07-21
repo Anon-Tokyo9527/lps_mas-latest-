@@ -3055,12 +3055,24 @@ class TestEnv:
         pallet_name = record["pallet_name"]
         try:
             pallet_obj = self._get_pallet(pallet_name=pallet_name)
-            _, _, pallet_height = self._object_size_xyz(pallet_obj, default=(1.2, 1.0, 0.25))
+            pallet_dims = self._object_size_xyz(pallet_obj, default=(1.2, 1.0, 0.25))
+            pallet_length, _, pallet_height = pallet_dims
         except Exception:
-            pallet_height = 0.25
-        platform_surface_z = 0.19
-        pallet_bottom_z = base[2] + platform_surface_z + 0.02
-        carrier_pos = [base[0], base[1], pallet_bottom_z + pallet_height * 0.5]
+            pallet_length, pallet_height = 1.2, 0.25
+        try:
+            _, orient = agent.get_world_pose()
+            w, x, y, z = orient[0], orient[1], orient[2], orient[3]
+            yaw = math.atan2(2.0 * (w * z + x * y), 1.0 - 2.0 * (y * y + z * z))
+        except Exception:
+            yaw = 0.0
+        forward_x = math.cos(yaw)
+        forward_y = math.sin(yaw)
+        push_dist = float(getattr(agent, "footprint_radius", 0.65)) + pallet_length * 0.5 + 0.15
+        carrier_pos = [
+            base[0] + forward_x * push_dist,
+            base[1] + forward_y * push_dist,
+            pallet_height * 0.5,
+        ]
         self._move_pallet_stack(
             record["pallet_name"],
             carrier_pos,

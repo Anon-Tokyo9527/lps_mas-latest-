@@ -32,6 +32,7 @@ class Transporter:
 
         self.position = np.array(position if position is not None else [0.0, 0.0, 0.0], dtype=float)
         self._last_base_world_position = self.position.copy()
+        self._fallback_last_move_at = None
         self._joint_retry_after = {}
         quat = euler_angles_to_quat(np.array(orientation), degrees=True) if orientation is not None else None
 
@@ -79,7 +80,7 @@ Prefer axis-aligned warehouse paths and keep clearance around static objects.
             try:
                 self.initialize()
             except Exception:
-                return False
+                return self._move_to_world_pose_fallback(pos, tolerance=tolerance)
 
         pos = np.array(pos, dtype=float)
         target = pos.copy()
@@ -87,7 +88,7 @@ Prefer axis-aligned warehouse paths and keep clearance around static objects.
 
         joint_positions = self._safe_get_joint_positions()
         if joint_positions is None:
-            return False
+            return self._move_to_world_pose_fallback(pos, tolerance=tolerance)
 
         dx = target[0] - joint_positions[self._x_joint_idx]
         dy = target[1] - joint_positions[self._y_joint_idx]
@@ -199,6 +200,34 @@ Prefer axis-aligned warehouse paths and keep clearance around static objects.
             return None
         self._joint_retry_after["ridgeback"] = 0.0
         return joints
+
+    def _move_to_world_pose_fallback(self, pos, tolerance=0.18, speed=1.1):
+        target = np.array(pos, dtype=float)
+        target[2] = self._last_base_world_position[2]
+        current = self._last_base_world_position.copy()
+        delta = target - current
+        dist = float(np.linalg.norm(delta[:2]))
+        now = time.monotonic()
+        last = self._fallback_last_move_at
+        self._fallback_last_move_at = now
+        if dist <= float(tolerance):
+            self._set_base_world_pose_fallback(target)
+            return True
+        dt = 0.05 if last is None else max(0.016, min(now - float(last), 0.12))
+        step = min(dist, float(speed) * dt)
+        ratio = step / max(dist, 1e-6)
+        next_pos = current.copy()
+        next_pos[:2] = current[:2] + delta[:2] * ratio
+        self._set_base_world_pose_fallback(next_pos)
+        return False
+
+    def _set_base_world_pose_fallback(self, base_pos):
+        base_pos = np.array(base_pos, dtype=float)
+        self._last_base_world_position = base_pos.copy()
+        try:
+            self.ridgeback.set_world_pose(position=base_pos.tolist())
+        except Exception:
+            pass
 
     def init_llm(self, provider, model_name, api_key):
         self.lm = LM(provider, model_name, api_key, self.sys_prompt)
