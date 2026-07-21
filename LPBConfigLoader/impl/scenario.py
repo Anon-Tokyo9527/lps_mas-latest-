@@ -2562,14 +2562,6 @@ class TestEnv:
             return False
 
         if phase == "lower_pick":
-            t = self._phase_ratio(phase_elapsed, durations.get("lower_pick", 0.8))
-            package_half = self._package_world_half_height(
-                package_name=package_name, clearance=0.04
-            )
-            lift_target_z = package_start[2] + package_half + 0.05
-            smooth_z = package_start[2] + (lift_target_z - package_start[2]) * self._smoothstep(t)
-            smooth_pos = [package_start[0], package_start[1], smooth_z]
-            self._set_package_world_position(package_name, smooth_pos)
             if phase_elapsed >= float(durations.get("lower_pick", 0.8)) or self._manipulator_end_effector_near(
                 agent,
                 package_start,
