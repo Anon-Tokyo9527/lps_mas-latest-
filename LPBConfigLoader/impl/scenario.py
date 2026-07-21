@@ -2576,7 +2576,6 @@ class TestEnv:
                 tolerance=0.32,
             ):
                 self._attach_package_to_manipulator(agent, package_name, package_start)
-                step["_mp_attached_at"] = now
                 if package_name in self._conveyor_flows:
                     self._conveyor_flows[package_name]["status"] = "picked_by_arm"
                 self._mark_candidate(package_name, "picked_by_arm")
@@ -2585,17 +2584,6 @@ class TestEnv:
 
         if phase == "grip":
             self._sync_manipulator_attached_package(agent, package_name, package_start)
-            ee_pos = self._manipulator_end_effector_position(agent)
-            if ee_pos is not None:
-                t = self._phase_ratio(now - float(step.get("_mp_attached_at", now)), 0.35)
-                st = self._smoothstep(t)
-                prev = step.get("_mp_lift_pos") or self._package_world_position(package_name) or package_start
-                smooth = [
-                    prev[0] + (ee_pos[0] - prev[0]) * st,
-                    prev[1] + (ee_pos[1] - prev[1]) * st,
-                    prev[2] + (ee_pos[2] - prev[2]) * st,
-                ]
-                self._set_package_world_position(package_name, smooth)
             if phase_elapsed >= float(durations.get("grip", 0.35)):
                 self._set_manipulator_phase(step, "lift", now, agent, package_name)
             return False
