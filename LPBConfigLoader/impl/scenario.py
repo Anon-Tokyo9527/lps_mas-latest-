@@ -2895,13 +2895,13 @@ class TestEnv:
     def _attach_package_to_manipulator(self, agent, package_name, fallback_position):
         package_record = self._find_package_record(package_name)
         dimensions = package_record.get("dimensions") if package_record else self._package_dimensions_for(package_name)
-        current = self._package_world_position(package_name) or self._vec3(fallback_position)
+        hold_pos = self._manipulator_package_follow_position(agent, package_name, fallback_position)
         self._held_packages[package_name] = {
             "agent": agent,
             "agent_name": self._agent_name(agent),
             "hold_height": 0.75,
             "dimensions": dimensions,
-            "fixed_position": current,
+            "fixed_position": hold_pos,
         }
         self._set_package_physics(package_name, rigid=True, kinematic=True)
         self._set_package_collision(package_name, enabled=False)
@@ -2922,16 +2922,8 @@ class TestEnv:
         held = self._held_packages.get(package_name)
         if not held:
             return
-        target = self._manipulator_package_follow_position(agent, package_name, fallback_position)
-        prev = held.get("fixed_position")
-        if prev is not None:
-            alpha = 0.35
-            target = [
-                prev[0] + (target[0] - prev[0]) * alpha,
-                prev[1] + (target[1] - prev[1]) * alpha,
-                prev[2] + (target[2] - prev[2]) * alpha,
-            ]
-        held["fixed_position"] = target
+        hold_pos = self._manipulator_package_follow_position(agent, package_name, fallback_position)
+        held["fixed_position"] = hold_pos
         self._sync_virtual_package(package_name)
 
     def _manipulator_package_follow_position(self, agent, package_name, fallback_position):
@@ -2958,7 +2950,7 @@ class TestEnv:
             end_effector[1],
             max(0.03, end_effector[2] - package_half_height - 0.04),
         ]
-        if self._distance(candidate, fallback) <= 5.0:
+        if self._distance(candidate, fallback) <= 1.15:
             return candidate
         return fallback
 
