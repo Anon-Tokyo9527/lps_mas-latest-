@@ -203,11 +203,6 @@ Prefer axis-aligned warehouse paths and keep clearance around static objects.
         self._last_base_world_position = base_pos.copy()
         try:
             self.ridgeback.set_world_pose(position=base_pos.tolist())
-            if self._x_joint_idx is not None and self._y_joint_idx is not None:
-                self.ridgeback.set_joint_positions(
-                    positions=np.array([0.0, 0.0, 0.0]),
-                    joint_indices=[self._x_joint_idx, self._y_joint_idx, self._rz_joint_idx],
-                )
         except Exception:
             pass
 
