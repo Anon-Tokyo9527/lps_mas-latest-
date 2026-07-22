@@ -35,6 +35,7 @@ class Shuttle:
         self.base_position = np.array(position, dtype=float)
         self.position = self.base_position.copy()
         self._last_base_world_position = self.base_position.copy()
+        self._fallback_last_move_at = None
         self._joint_retry_after = {}
         self.arm_mount_height = 0.29
         self.default_arm_positions = np.array([np.pi, -np.pi / 2, -np.pi / 2, -np.pi / 2, np.pi / 2, 0.0])
@@ -223,15 +224,15 @@ Return a A2A message. The `body` must contain:
             try:
                 self.initialize()
             except Exception:
-                return False
+                return self._move_to_world_pose_fallback(world_target)
         # 计算相对于初始位置的位移目标 (因为 dummy joints 通常是相对于初始点的偏移)
         pos[:2] = pos[:2] - self.base_position[:2]
-        
+
         joint_positions = self._safe_get_joint_positions(self.ridgeback, "ridgeback")
-        
+
 # 增加空值判断
         if joint_positions is None:
-            return False
+            return self._move_to_world_pose_fallback(world_target)
         
         # === 检查是否到达目标 ===
         # 使用曼哈顿距离判断误差是否小于 0.05
@@ -492,6 +493,42 @@ Return a A2A message. The `body` must contain:
         self._joint_retry_after[key] = 0.0
         return joints
 
+    def _move_to_world_pose_fallback(self, world_target, tolerance=0.05, speed=2.0):
+        target = np.array(world_target, dtype=float)
+        target[2] = self._last_base_world_position[2]
+        current = self._last_base_world_position.copy()
+        delta = target - current
+        dist = float(np.linalg.norm(delta[:2]))
+        now = time.monotonic()
+        last = self._fallback_last_move_at
+        self._fallback_last_move_at = now
+        if dist <= float(tolerance):
+            self._set_base_world_pose_fallback(target)
+            self.set_arm_display_pose(target=world_target, mode="neutral")
+            return True
+        dt = 0.05 if last is None else max(0.016, min(now - float(last), 0.12))
+        step = min(dist, float(speed) * dt)
+        ratio = step / max(dist, 1e-6)
+        next_pos = current.copy()
+        next_pos[:2] = current[:2] + delta[:2] * ratio
+        self._set_base_world_pose_fallback(next_pos)
+        yaw = math.atan2(float(delta[1]), float(delta[0])) if dist > 1e-6 else None
+        self.set_arm_display_pose(target=world_target, mode="neutral", yaw=yaw)
+        return False
+
+    def _set_base_world_pose_fallback(self, base_pos):
+        base_pos = np.array(base_pos, dtype=float)
+        self._last_base_world_position = base_pos.copy()
+        try:
+            self.ridgeback.set_world_pose(position=base_pos.tolist())
+        except Exception:
+            pass
+        arm_pos = base_pos.copy()
+        arm_pos[2] += self.arm_mount_height
+        try:
+            self.ur10.set_world_pose(position=arm_pos.tolist())
+        except Exception:
+            pass
 
     def update(self, obj):
         """

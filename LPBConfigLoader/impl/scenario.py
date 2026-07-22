@@ -536,12 +536,11 @@ class TestEnv:
                 print(f"[LPB] Reset skipped for {obj}: {exc}")
 
     def run(self):
+        self._update_visual_runtime()
         self._run_command_script_tick()
 
         if self._run_api_task_tick():
             return False
-
-        self._update_visual_runtime()
 
         if not self.current_plan or self.shuttle is None:
             return False
