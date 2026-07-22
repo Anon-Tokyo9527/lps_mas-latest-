@@ -536,11 +536,12 @@ class TestEnv:
                 print(f"[LPB] Reset skipped for {obj}: {exc}")
 
     def run(self):
-        self._update_visual_runtime()
         self._run_command_script_tick()
 
         if self._run_api_task_tick():
             return False
+
+        self._update_visual_runtime()
 
         if not self.current_plan or self.shuttle is None:
             return False
@@ -1943,10 +1944,6 @@ class TestEnv:
                 "candidate_pool": self.get_candidate_pool(),
             },
         )
-        try:
-            agent.reset()
-        except Exception:
-            pass
         return True
 
     def _add_package_to_shuttle_queue(self, agent, package_name):
@@ -2577,11 +2574,15 @@ class TestEnv:
 
         if phase == "grip":
             shelf_pos = step.get("_mp_shelf_pos") or package_start
-            self._sync_manipulator_attached_package(agent, package_name, package_start)
-            t = self._phase_ratio(phase_elapsed, 0.35)
-            target = self._package_world_position(package_name) or shelf_pos
-            smooth = self._lerp_vec3(shelf_pos, target, self._smoothstep(t))
-            self._set_package_world_position(package_name, smooth)
+            ee_pos = self._manipulator_end_effector_position(agent)
+            if ee_pos is not None:
+                t = self._phase_ratio(phase_elapsed, 0.35)
+                package_half = self._package_world_half_height(
+                    package_name=package_name, clearance=0.04
+                )
+                grip_target = [ee_pos[0], ee_pos[1], ee_pos[2] - package_half - 0.04]
+                smooth = self._lerp_vec3(shelf_pos, grip_target, self._smoothstep(t))
+                self._set_package_world_position(package_name, smooth)
             if phase_elapsed >= float(durations.get("grip", 0.35)):
                 self._set_manipulator_phase(step, "lift", now, agent, package_name)
             return False

@@ -76,31 +76,7 @@ Prefer axis-aligned warehouse paths and keep clearance around static objects.
         self._step = 0
 
     def move_to(self, pos, tolerance=0.18):
-        if self._x_joint_idx is None:
-            try:
-                self.initialize()
-            except Exception:
-                return self._move_to_world_pose_fallback(pos, tolerance=tolerance)
-
-        pos = np.array(pos, dtype=float)
-        target = pos.copy()
-        target[:2] = target[:2] - self.position[:2]
-
-        joint_positions = self._safe_get_joint_positions()
-        if joint_positions is None:
-            return self._move_to_world_pose_fallback(pos, tolerance=tolerance)
-
-        dx = target[0] - joint_positions[self._x_joint_idx]
-        dy = target[1] - joint_positions[self._y_joint_idx]
-        if abs(dx) + abs(dy) < float(tolerance):
-            return True
-
-        action = ArticulationAction(joint_positions=np.full(self.ridgeback.num_dof, np.nan))
-        action.joint_positions[self._x_joint_idx] = target[0]
-        action.joint_positions[self._y_joint_idx] = target[1]
-        action.joint_positions[self._rz_joint_idx] = math.atan2(dy, dx)
-        self.ridgeback.apply_action(action)
-        return False
+        return self._move_to_world_pose_fallback(pos, tolerance=tolerance)
 
     def load_pallet(self, obj):
         world = World.instance()
